@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "devices",
+  "info": {
+    "name": "Devices"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "brand": {
+      "model": "brands",
+      "via": "devices"
+    },
+    "category": {
+      "via": "devices",
+      "model": "categories"
+    },
+    "explanation": {
+      "type": "dynamiczone",
+      "components": []
+    },
+    "issues": {
+      "via": "devices",
+      "collection": "issues",
+      "dominant": true
+    },
+    "device_issues": {
+      "via": "device",
+      "collection": "device-issue"
+    }
+  }
+}

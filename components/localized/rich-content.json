@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_localized_rich_contents",
+  "info": {
+    "name": "RichContent",
+    "icon": "atom"
+  },
+  "options": {},
+  "attributes": {
+    "en": {
+      "type": "richtext"
+    },
+    "tr": {
+      "type": "richtext"
+    },
+    "fr": {
+      "type": "richtext"
+    },
+    "de": {
+      "type": "richtext"
+    },
+    "es": {
+      "type": "richtext"
+    },
+    "ja": {
+      "type": "richtext"
+    },
+    "hi": {
+      "type": "richtext"
+    },
+    "pt": {
+      "type": "richtext"
+    },
+    "ru": {
+      "type": "richtext"
+    },
+    "ko": {
+      "type": "richtext"
+    },
+    "sv": {
+      "type": "richtext"
+    }
+  }
+}

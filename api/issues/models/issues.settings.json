@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issues",
+  "info": {
+    "name": "Issues"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "component",
+      "repeatable": true,
+      "component": "localized.issue"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "text"
+    },
+    "devices": {
+      "collection": "devices",
+      "via": "issues"
+    }
+  }
+}

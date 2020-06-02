@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "device_issues",
+  "info": {
+    "name": "DeviceIssue"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "repeat_frequency": {
+      "type": "integer",
+      "max": 10,
+      "min": 0
+    },
+    "effect_on_usability": {
+      "type": "integer",
+      "max": 10,
+      "min": 0
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "device_issues"
+    },
+    "explanation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "localized.rich-content"
+    },
+    "company_response": {
+      "type": "component",
+      "repeatable": true,
+      "component": "localized.rich-content"
+    },
+    "company_solution": {
+      "type": "component",
+      "repeatable": true,
+      "component": "localized.rich-content"
+    },
+    "device": {
+      "model": "devices",
+      "via": "device_issues"
+    }
+  }
+}

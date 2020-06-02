@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_issue_issues",
+  "info": {
+    "name": "Title",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "en": {
+      "type": "string"
+    },
+    "tr": {
+      "type": "string"
+    },
+    "fr": {
+      "type": "string"
+    },
+    "de": {
+      "type": "string"
+    },
+    "es": {
+      "type": "string"
+    },
+    "ja": {
+      "type": "string"
+    },
+    "hi": {
+      "type": "string"
+    },
+    "pt": {
+      "type": "string"
+    },
+    "ru": {
+      "type": "string"
+    },
+    "ko": {
+      "type": "string"
+    },
+    "sv": {
+      "type": "string"
+    }
+  }
+}
