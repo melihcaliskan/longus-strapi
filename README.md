@@ -1,4 +1,3 @@
-# Strapi application
+# longus.io REST API
 
-A quick description of your strapi application
-# longus-strapi
+WIP
